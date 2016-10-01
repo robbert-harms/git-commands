@@ -18,3 +18,9 @@ git tag -a v$(python setup.py --version) -m 'description of version'
 ```sh
 git tag -d <tag_name>
 ```
+
+#### Using the remote version, overriding all your local updates
+```sh
+git fetch origin
+git reset --hard origin/master
+```

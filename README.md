@@ -14,3 +14,7 @@ Useful commands needed once in a while.
 ```sh
 git tag -a v$(python setup.py --version) -m 'description of version'
 ```
+#### Removing a tag
+```sh
+git tag -d <tag_name>
+```

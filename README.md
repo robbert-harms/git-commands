@@ -1,7 +1,9 @@
 # git-commands
 Conglomeration of Git commands.
 
-Most of these commands are focused on Python packages with a [GitLab workflow](https://docs.gitlab.com/ee/workflow/gitlab_flow.html). 
+Most of these commands are focused on Python packages with a [GitLab workflow](https://docs.gitlab.com/ee/workflow/gitlab_flow.html):
+![alt tag](https://github.com/robbert-harms/git-commands/blob/master/git_workflow.png)
+
 
 ## Workflow commands
 Commands needed on a daily basis.

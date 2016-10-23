@@ -28,3 +28,23 @@ git tag -d <tag_name>
 git fetch origin
 git reset --hard origin/master
 ```
+
+
+#### Finding a deleted file (copied from stackoverflow)
+Get a list of the deleted files and copy the full path of the deleted file
+```sh
+git log --diff-filter=D --summary | grep delete
+```
+Execute the next command to find commit id of that commit and copy the commit id
+```sh
+git log --all -- FILEPATH
+```
+Show diff of deleted file
+```sh
+git show COMMIT_ID -- FILE_PATH
+```
+Remember, you can write output to a file using > like
+```sh
+git show COMMIT_ID -- FILE_PATH > deleted.diff
+```
+

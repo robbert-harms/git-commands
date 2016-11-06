@@ -48,3 +48,11 @@ Remember, you can write output to a file using > like
 git show COMMIT_ID -- FILE_PATH > deleted.diff
 ```
 
+
+#### Merge another branch with only one commit message
+This is useful if you want to merge a bugfix branch or a feature branch but do not want to include all the intermediate commit messages. If you add git commit without the -m flag after the merge, it automatically generates a commit messages from the intermediate messages.
+```sh
+git checkout master
+git merge --squash my_feature_branch
+git commit
+```
